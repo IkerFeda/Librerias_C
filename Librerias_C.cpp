@@ -34,7 +34,6 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    // Parent Process
     strcpy((char*)shared_memory_ptr, "Hello, child process!");
 
     WaitForSingleObject(pi.hProcess, INFINITE);
